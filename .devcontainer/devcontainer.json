@@ -1,5 +1,9 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "name": "SYSL with a codespace",
+   "remoteEnv": {
+    "SYSL_PLANTUML": "http://localhost:8080"
+  },
   "features": {
   }
 }
