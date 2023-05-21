@@ -1205,6 +1205,20 @@ func TestSyslSyntaxValidate(t *testing.T) {
 
 // checkPlantUML causes a test to fail with a useful error message if a local PlantUML cannot be
 // reached for tests that require it.
+
+// what do we do if we're  running in codespaces?
+// https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-codespaces-for-your-account#codespaces-environment-variables
+
+// How do I run plantuml in codespaces?
+// 
+// how do I add plantuml to my devcontainer?
+//
+
+// How do I set environment variables in codespaces?
+// https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-codespaces-for-your-account#codespaces-environment-variables
+
+// what do we do with os.getEnv in codespaces?
+// https://docs.github.com/en/codespaces/developing-in-codespaces/creating-a-codespace#environment-variables
 func checkPlantUML(t *testing.T) {
 	plantURL := os.Getenv("SYSL_PLANTUML")
 	res, err := http.Head(plantURL) //nolint:gosec
